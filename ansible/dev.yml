@@ -1,0 +1,10 @@
+---
+
+- hosts: dev_instances
+  tasks:
+    - name: install dev packages
+      pacman:
+        update_cache: yes
+        name:
+          - base-devel
+          - python-pip
